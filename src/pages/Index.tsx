@@ -1,14 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/HeroSection";
+import VideoSection from "@/components/VideoSection";
+import AuthoritySection from "@/components/AuthoritySection";
+import MarketSection from "@/components/MarketSection";
+import CurriculumSection from "@/components/CurriculumSection";
+import BonusSection from "@/components/BonusSection";
+import SocialProofSection from "@/components/SocialProofSection";
+import CTASection from "@/components/CTASection";
+import FAQSection from "@/components/FAQSection";
+import Footer from "@/components/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
-const Index = () => {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
-  );
-};
+const Index = () => (
+  <>
+    <HeroSection />
+    <VideoSection />
+    <AuthoritySection />
+    <MarketSection />
+    <CurriculumSection />
+    <BonusSection />
+    <SocialProofSection />
+    <CTASection />
+    <FAQSection />
+    <Footer />
+    <WhatsAppFloat />
+  </>
+);
 
 export default Index;

@@ -57,6 +57,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "section-dark": "hsl(var(--section-dark))",
+        "section-light": "hsl(var(--section-light))",
+      },
+      fontFamily: {
+        heading: ['"Space Grotesk"', 'sans-serif'],
+        body: ['"Inter"', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
