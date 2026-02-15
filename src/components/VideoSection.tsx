@@ -22,16 +22,15 @@ const VideoSection = () => (
         viewport={{ once: true }}
         className="relative aspect-video w-full overflow-hidden rounded-2xl bg-muted shadow-xl border border-border"
       >
-        <div className="flex h-full w-full items-center justify-center">
-          <div className="text-center">
-            <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-secondary text-secondary-foreground">
-              <svg className="h-8 w-8 ml-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </div>
-            <p className="text-muted-foreground font-medium">Inserir vídeo de vendas aqui</p>
-          </div>
-        </div>
+        <iframe
+          title="vimeo-player"
+          src="https://player.vimeo.com/video/1165039632?h=e5a5342576"
+          className="absolute inset-0 h-full w-full"
+          frameBorder="0"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          allowFullScreen
+        />
       </motion.div>
     </div>
   </section>

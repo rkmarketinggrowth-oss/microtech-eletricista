@@ -28,11 +28,11 @@ const HeroSection = () => (
       >
         <img src={logo} alt="Microtech Treinamentos" className="mx-auto mb-8 h-16 object-contain lg:mx-0" />
 
-        <h1 className="mb-6 font-heading text-3xl font-bold leading-tight text-primary-foreground sm:text-4xl md:text-5xl lg:text-[3.2rem]">
-          Saia do Zero e Fature de{" "}
-          <span className="text-gradient">R$ 200 a R$ 800 por Dia</span>{" "}
-          como Eletricista Residencial e Predial em Apenas{" "}
-          <span className="text-gradient">3 Dias</span> de Imersão Prática
+        <h1 className="mb-6 font-heading text-3xl font-bold leading-tight text-primary-foreground sm:text-4xl md:text-5xl lg:text-[3.2rem] uppercase">
+          SAIA DO ZERO E FATURE DE{" "}
+          <span className="text-gradient">R$ 200 A R$ 800 POR DIA</span>{" "}
+          COMO ELETRICISTA RESIDENCIAL E PREDIAL EM APENAS{" "}
+          <span className="text-gradient">3 DIAS</span> DE IMERSÃO PRÁTICA
         </h1>
 
         <p className="mx-auto mb-8 max-w-2xl text-lg text-primary-foreground/80 lg:mx-0">
