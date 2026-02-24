@@ -5,7 +5,17 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+// Função que remove elementos flutuantes com estilos específicos
+const removeFloating = () => {
+  document.querySelectorAll('[style^="position: fixed"][style*="bottom: 1rem"][style*="z-index: 2147483647"]').forEach(el => el.remove());
+};
 
+// Executa a função imediatamente ao carregar
+removeFloating();
+
+// Observa mudanças no DOM e reaplica a função se novos elementos forem adicionados
+const observer = new MutationObserver(removeFloating);
+observer.observe(document.body, { childList: true, subtree: true });
 const queryClient = new QueryClient();
 
 const App = () => (
